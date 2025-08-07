@@ -1,0 +1,27 @@
+
+-----BÀI TẬP 1: KHỞI TẠO VÀ THU DỌN TIẾN TRÌNH-----
+
+-----BÀI TẬP 2: THAY THẾ MÃ THỰC THI VÀ TƯƠNG TÁC VỚI MÔI TRƯỜNG-----
+- Câu hỏi: Điều gì xảy ra với không gian địa chỉ và mã lệnh của tiến trình con sau khi exec() được gọi thành công?
+
+-> Trả lời:
+
+- Sau khi exec() được gọi thành công, một sự thay thế hoàn toàn sẽ diễn ra bên trong không gian của tiến trình con:
+
+1. Hủy bỏ không gian địa chỉ cũ: Toàn bộ không gian địa chỉ ảo của tiến trình con bao gồm phân đoạn mã lệnh (code segment), phân đoạn dữ liệu (data segment), vùng nhớ heap và vùng nhớ stack của chương trình C ban đầu sẽ bị hệ điều hành hủy bỏ.
+
+2. Nạp chương trình mới: Hệ điều hành sẽ nạp mã lệnh và dữ liệu của chương trình mới (trong ví dụ này là ls) từ file thực thi của nó vào không gian địa chỉ vừa được giải phóng. Một vùng nhớ stack và heap mới, sạch sẽ, sẽ được cấp phát cho chương trình mới này.
+
+3. PID không đổi: Điều quan trọng là Process ID (PID) của tiến trình con không thay đổi. Nó vẫn là tiến trình đó đối với hệ điều hành, nhưng "linh hồn" (mã lệnh) bên trong nó đã được thay thế hoàn toàn.
+
+- Ví dụ thực tế: Hãy tưởng tượng tiến trình con là một mảnh đất có địa chỉ cố định (PID). Việc gọi exec() giống như bạn san phẳng hoàn toàn ngôi nhà cũ (chương trình C) trên mảnh đất đó và xây lên một tòa nhà hoàn toàn mới (chương trình ls). Địa chỉ mảnh đất không đổi, nhưng công trình bên trên đã khác hoàn toàn.
+
+
+-----BÀI TẬP 3: KHẢO SÁT CÁC TRẠNG THÁI TIẾN TRÌNH ĐẶC BIỆT-----
+- Câu hỏi: Tại sao hai trạng thái này xuất hiện và ý nghĩa của chúng trong hệ thống Linux là gì? 
+
+-> Trả lời:
+
+- Zombie xuất hiện như một phần của cơ chế quản lý tiến trình bình thường. Nó là một trạng thái chuyển tiếp, đảm bảo rằng thông tin kết thúc của một tiến trình con (mã thoát) không bị mất đi trước khi tiến trình cha kịp thu thập nó thông qua wait(). Tuy nhiên, nếu một tiến trình Zombie tồn tại quá lâu, đó thường là dấu hiệu của lỗi lập trình (cha quên gọi wait), có thể gây rò rỉ tài nguyên trong bảng tiến trình của hệ thống.
+
+- Orphan xuất hiện khi tiến trình cha kết thúc trước tiến trình con. Đây là một cơ chế phòng vệ của hệ thống. Việc "nhận nuôi" tiến trình mồ côi bởi init (PID 1) đảm bảo rằng khi tiến trình con này kết thúc, sẽ có một tiến trình khác (init) chịu trách nhiệm wait() nó. Điều này ngăn chặn tiến trình mồ côi trở thành một tiến trình Zombie vĩnh viễn, giúp hệ thống luôn ở trạng thái ổn định.
