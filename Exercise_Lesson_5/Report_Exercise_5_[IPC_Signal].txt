@@ -1,0 +1,21 @@
+
+--------BÀI TẬP 1: BẮT TÍN HIỆU SIGINT--------
+*Câu hỏi: Nếu bỏ qua tín hiệu SIGINT, chuyện gì sẽ xảy ra khi nhấn Ctrl+C?
+=> Trả lời: 
+- Mỗi tín hiệu đều có một hành động mặc định. Hành động mặc định của SIGINT là chấm dứt (terminate) tiến trình. Nếu bạn không đăng ký hàm xử lý để "bắt" và xử lý nó theo cách riêng, chương trình của bạn sẽ bị tắt ngay lập tức ở lần nhấn Ctrl+C đầu tiên.
+
+
+--------BÀI TẬP 2: SỬ DỤNG SIGALRM ĐỂ TẠO TIMER--------
+*Câu hỏi: Điều gì xảy ra nếu không gọi lại alarm(1) trong hàm xử lý?
+=> Trả lời:
+- Hàm alarm() chỉ đặt báo thức một lần duy nhất. Nếu bạn không gọi lại alarm(1) trong hàm xử lý, chương trình sẽ chỉ nhận được tín hiệu SIGALRM một lần sau 1 giây đầu tiên. Sau đó, nó sẽ tiếp tục chạy trong vòng lặp while(1) và pause() mãi mãi mà không bao giờ nhận thêm tín hiệu SIGALRM nào nữa.
+
+
+--------BÀI TẬP 3: TẠO GIAO TIẾP GIỮA CÁC PROCESS BẰNG TÍN HIỆU--------
+*Câu hỏi: Tại sao chúng ta cần sử dụng kill() để gửi tín hiệu trong bài này?
+=> Trả lời:
+- Vì chúng ta cần một tiến trình (cha) gửi tín hiệu cho một tiến trình khác (con). Hàm kill(pid, signum) được thiết kế cho mục đích này. Các hàm như alarm() (gửi SIGALRM cho chính nó) hay raise() (gửi tín hiệu cho chính nó) không thể dùng để giao tiếp giữa hai tiến trình riêng biệt.
+
+
+--------BÀI TẬP 4: CHƯƠNG TRÌNH CHỜ TÍN HIỆU KẾT HỢP CHỜ NGƯỜI DÙNG NHẬP LIỆU--------
+*No Question:
