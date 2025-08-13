@@ -1,0 +1,62 @@
+
+--------BÀI TẬP 1: TẠO VÀ CHẠY LUỒNG CƠ BẢN--------
+*Câu hỏi: 
+1. Giải thích vai trò và các tham số chính của hàm pthread_create() và pthread_join()?
+2. Một luồng kết thúc khi nào?
+
+=> Trả lời: 
+*Câu 1:
+-> pthread_create():
+- Vai trò: "Khai sinh" ra một luồng thực thi mới. Nó tạo ra một luồng điều khiển mới chạy song song với luồng đã gọi nó.
+- Tham số chính:
+	- thread: Con trỏ tới pthread_t để lưu ID luồng.
+	- start_routine: Con trỏ tới hàm mà luồng sẽ chạy.
+
+-> pthread_join():
+- Vai trò: "Thu dọn" một luồng đã kết thúc. Nó bắt luồng hiện tại phải chờ một luồng khác hoàn thành, đồng thời cho phép lấy kết quả trả về của luồng đó. Đây là cơ chế đồng bộ hóa cơ bản nhất. 
+- Tham số chính:
+	- thread: ID của luồng cần chờ.
+	- retval: Con trỏ tới nơi lưu giá trị trả về của luồng đã kết thúc.
+	
+*Câu 2:
+-> Một luồng sẽ kết thúc trong một trong các trường hợp sau:
+	- Nó thực thi xong câu lệnh cuối cùng trong hàm bắt đầu của nó và thực hiện return.
+	- Nó gọi hàm pthread_exit() từ bất kỳ đâu trong code của nó.
+	- Toàn bộ tiến trình (process) chứa nó bị chấm dứt (ví dụ, luồng chính gọi exit() hoặc bị hủy bởi một tín hiệu).
+	
+	
+--------BÀI TẬP 2: VẤN ĐỀ "RACE CONDITION" VÀ GIẢI PHÁP MUTEX--------
+*Câu hỏi: 
+1. Tại sao cần phải sử dụng mutex trong bài toán này?
+2. Điều gì sẽ xảy ra nếu chúng ta bỏ qua việc sử dụng mutex? Giải thích tại sao kết quả cuối cùng có thể không chính xác và không ổn định.
+
+=> Trả lời: 
+*Câu 1:
+- Chúng ta cần sử dụng mutex vì thao tác counter++ không phải là một thao tác nguyên tử (atomic). Dù chỉ là một dòng code, nhưng đối với CPU, nó được dịch thành 3 bước riêng biệt:
+
+1. ĐỌC: Đọc giá trị hiện tại của counter từ bộ nhớ chính vào một thanh ghi (register) của CPU.
+2. TĂNG: Tăng giá trị trong thanh ghi đó lên 1.
+3. GHI: Ghi giá trị mới từ thanh ghi trở lại vào biến counter trong bộ nhớ chính.
+
+=> Hệ điều hành có thể tạm dừng một luồng và chuyển sang một luồng khác sau bất kỳ bước nào trong ba bước trên.
+
+*Câu 2:
+- Nếu bỏ qua mutex, kết quả cuối cùng của counter sẽ sai (luôn nhỏ hơn 3,000,000) và không ổn định (mỗi lần chạy ra một kết quả khác nhau). 
+*Kịch bản gây lỗi (Race Condition):
+- Hãy tưởng tượng counter đang có giá trị là 50.
+
+1. Luồng A thực hiện Bước 1: Đọc giá trị 50 vào thanh ghi của nó.
+2. HỆ ĐIỀU HÀNH NGẮT LUỒNG A, chuyển sang cho Luồng B chạy.
+3. Luồng B thực hiện cả 3 bước: Đọc giá trị 50, tăng lên 51, và ghi 51 trở lại bộ nhớ. Bây giờ counter có giá trị là 51.
+4. HỆ ĐIỀU HÀNH NGẮT LUỒNG B, quay lại cho Luồng A chạy tiếp.
+5. Luồng A tiếp tục từ Bước 2. Nó không biết rằng counter đã thay đổi. Nó vẫn làm việc với giá trị 50 mà nó đã đọc lúc đầu. Nó tăng giá trị trong thanh ghi của nó lên 51.
+6. Luồng A thực hiện Bước 3: Ghi 51 từ thanh ghi của nó vào bộ nhớ.
+
+- Hậu quả: Cả hai luồng đều đã thực hiện thao tác tăng, nhưng giá trị cuối cùng của counter chỉ là 51, trong khi nó phải là 52. Một thao tác tăng đã bị mất! Khi điều này xảy ra hàng triệu lần, sai số sẽ rất lớn.
+
+
+--------BÀI TẬP 3: ĐỒNG BỘ HÓA VỚI CONDITION VARIABLES (MÔ HÌNH PRODUCER - CONSUMER)--------
+*No Question:
+
+--------BÀI TẬP 4: TỐI ƯU HÓA TRUY CẬP VỚI READ - WRITE LOCK--------
+*No Question:
