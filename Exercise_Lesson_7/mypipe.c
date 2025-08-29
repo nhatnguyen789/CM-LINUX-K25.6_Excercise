@@ -52,7 +52,7 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-    //---STEP 3: CREATE CHILD PROCESS (WILL RUN 'wc -l')---
+    //---STEP 3: CREATE CHILD PROCESS 2 (WILL RUN 'wc -l')---
     //This code is still in the original parent process.
     pid2 = fork();
     if(pid2 < 0)
