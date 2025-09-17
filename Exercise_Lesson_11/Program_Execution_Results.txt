@@ -1,0 +1,262 @@
+lucian@Lucian-123:~/devlinux/CM-LINUX-K25.6/lesson_10/Exercise$ ./restaurant_3
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 3] Waiting for VEGETTARIAN dish...
+The restaurant is open! (Press Ctrl+C to close)
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 2/10
+Vegetarian dishes on the tray: 3/10
+---------------------------
+
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 4/10
+Vegetarian dishes on the tray: 4/10
+---------------------------
+
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 7/10
+Vegetarian dishes on the tray: 5/10
+---------------------------
+
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 9/10
+Vegetarian dishes on the tray: 8/10
+---------------------------
+
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 9/10
+---------------------------
+
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 9/10
+Vegetarian dishes on the tray: 9/10
+---------------------------
+
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 9/10
+---------------------------
+
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Garlic Sirloin Steak' is done cooking. Place on a non-vegetarian plate.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 2] waiting for VEGETARIAN dish...
+[Customer 2] Took a VEGAN dish. Started eating.
+[Chef Portecelli] Dish 'Avocado Fruit salad' is done cooking. Place on vegetarian tray.
+[Customer 3] Waiting for VEGETTARIAN dish...
+[Customer 3] Ordered a VEGETARIAN dish. Started eacting.
+[Customer 3] Waiting for NON-VEGETARIAN dishes...
+[Customer 3] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+[Chef Portecelli] Dish 'Pistachio Pesto Pasta' is done cooking. Place on vegetarian tray.
+
+--- REPORT FROM MANAGER ---
+Non-vegan dishes on the tray: 10/10
+Vegetarian dishes on the tray: 10/10
+---------------------------
+
+[Customer 1] Waiting for NON-VEGETARIAN dish...
+[Customer 1] Ordered a NON-VEGGIE item. Start eating.
+[Chef Donatello] Dish 'Fettuccine Chicken Alfredo' is done cooking. Place on a non-vegetarian plate.
+^Z
+[1]+  Stopped                 ./restaurant_3
+lucian@Lucian-123:~/devlinux/CM-LINUX-K25.6/lesson_10/Exercise$
